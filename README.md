@@ -1,7 +1,7 @@
 # MODELLING HEALTH INSURANCE CLAIMS FRAUD USING LOGISTIC REGRESSION: AN APPLICATION OF MACHINE LEARNING
 
 
-### Abstract
+## Abstract
 
 The insurance industry is plagued by health insurance fraud in Kenya. Health insurance fraud involves deception and misrepresentation to get illicit health insurance benefits. This approach reduces affordable medical care for all socioeconomic groups. The analysis highlights the rising frequency of fraudulent claims and insurance and public healthcare program losses. It stresses how important it is to resolve these issues to preserve the healthcare system. This research seeks to detect fraudulent health insurance claims using logistic regression and stresses the importance of detecting and eradicating fraud to protect policyholders, minimize costs, and retain insurance sector trust. The research approach includes data collection, preparation, model fitting, and performance evaluation. The model's performance is measured by accuracy, precision, recall, fall-out, and AUR-ROC. The study fills gaps in fraud detection, data validation, and fraudulent intent research. It uses machine learning to detect health insurance fraud to improve healthcare efficiency and cut costs aiming to help the Kenyan and international insurance industry comprehend the rise in health insurance fraud.
 
@@ -26,27 +26,27 @@ Health insurance fraud has undergone significant transformations in the 21st cen
 
 The past few decades have seen an immense growth in Artificial Intelligence (AI). Most notably, machine learning techniques have been incorporated by insurance firms to detect fraudulent claims (Bhatore, 2020). Researchers have explored and still are exploring various machine learning techniques to improve the accuracy of fraud detection, especially in the medical insurance sector.
 
-#### Statement of the Problem
+### Statement of the Problem
 
 The prevalence of misuse and fraud in health insurance is currently causing an increase in anxiety within the insurance sector. Insurers face a substantial issue in effectively assessing and pricing risks due to the rising costs connected with fraudulent activity (NAIC, 2022). As a result, these insurers' returns on equity have decreased and premiums have increased. Due to fraudulent actions, public programs, such as the National Health Insurance Fund (NHIF), suffer severe negative repercussions. Therefore, modelling health insurance fraud is important for reducing the burden and costs of compliance for law-abiding healthcare institutions, practitioners, and their patients. 
 
- #### Research Objectives
+ ### Research Objectives
  
-##### General Objective
+#### General Objective
 To model health insurance claims fraud using logistic regression
-##### Specific Objectives
+#### Specific Objectives
 1.	To fit a logistic regression model on health insurance claims fraud data.
 2.	To train the logistic regression algorithm to generate an appropriate model for assessing health insurance claims.
 3.	To evaluate the performance of the model using AUR-ROC and confusion matrix metrics.
 	
-#### Significance of the Study
+### Significance of the Study
 
 This report aims to substantiate the significance of fraud detection as a primary function of health insurers and as a domain for prospective investigation. Undoubtedly, fraud imposes a financial burden on the health care system without yielding any advantages. Therefore, this study will play a crucial role in fostering a more streamlined health care system.
 
 The implementation of the research proposal aims to facilitate a reduction in insurance claim fraud within the health insurance system, resulting in cost savings.
 The research also helps in knowing factors that lead to rise on insurance health claims fraud.
 
-#### Scope
+### Scope
 
 The research project will focus on how the medical insurance industry can model fraudulent claims and therefore identify potential fraud cases that will cost them a lot of money. They then can employ ways to seal loopholes that lead to fraud. Consequently, the cost of healthcare in a developing country like Kenya can be manageable since fraud inflates the cost of healthcare.
 
@@ -70,7 +70,7 @@ The Insurance Industry Annual Report (2018) by AKI identifies prevalent forms of
 
 Many health insurance companies in Kenya have put up various technologies and strategies to fight fraud such as planned, targeted audits, random audits, whistleblowing, biometric systems, application of data mining such as classification algorithms (Naïve Bayes, Decision Tree and K-Nearest Neighbour) (Mambo, S., & Moturi, C. (2022)). It is estimated that 25% of insurance industry income is fraudulently claimed and 35% of medical claims are fraudulent according to AKI report produced in 2018. The implementation of biometric based technology for authentication of insured patients has been adopted to curb rising cases of fraud in medical insurance with 60-80% coverage.  
 
-#### Application of Machine Learning in Health Insurance Fraud Detection
+### Application of Machine Learning in Health Insurance Fraud Detection
 
 It has proved a necessity for insurance firms to implement effective measures to detect any cases of fraudulent claims before claims are settled. Some of the notable methods identified to help detect fraud in medical insurance includes Decision Trees (DTs), Random Forest (RF), Neural Network (NN), Support Vector Machine (SVM), and k-nearest neighbors (KNN). Traditionally speaking, in the healthcare anomaly detection area, machine learning applications can be divided into supervised learning and unsupervised learning (Zhang C, Xiao X & Wu C., 2020). Basically, supervised learning needs label of data for training, while unsupervised learning does not. Classification trees and decision trees (DTs) are binary trees that classify data into predetermined groups. The tree is constructed using splitting rules in a recursive manner from top to bottom. These rules are often univariate, but they can employ the same variable in zero, one, or several splitting rules.
 
@@ -84,7 +84,7 @@ KNN is an example of a supervised machine learning technique useful for problem 
 
 Multiple (linear) regression models calculate the expected value E (*) of one variable Y (the 'dependent' or 'outcome' variable) from a linear combination of several observed covariates X1; Xn (the 'independent' or 'explanatory' variables, or just 'predictors').
 
-#### Generalized Linear Models
+### Generalized Linear Models
 
 A class of statistical models known as generalized linear models (GLMs) expands the classic linear regression model to consider a larger variety of data distributions and response types. The response variable in GLMs may have one of several distributions, including the Gaussian (normal), binomial, Poisson, or gamma distributions. The response variable's predicted value and the predictors are connected by the link function. It converts the linear combination of predictors into the proper scale of the distribution of the response variable. 
 
@@ -94,7 +94,7 @@ By including a link function and a particular distribution assumption, GLMs offe
   
 Generally, these supervised machine learning algorithms are heavily dependent on training datasets. Because of the complicated nature of the healthcare sector, a dataset is usually not comprehensive, this therefore causes the result to be seriously over-fitted in real-world scenarios hence the GLM models are preferred. Types of GLMs commonly used in fraud modelling are logistic regression, Poisson regression, Negative Binomial Regression and Gamma Regression. Logistic regression is typically used when the response variable is binary (fraud vs. non-fraud). The logistic link function transforms the linear combination of predictors into the likelihood of fraud (Maher, 2020). This model calculates the odds ratio for each predictor and displays how the probability of fraud changes when the predictor is altered by one unit. Poisson regression is appropriate when the response variable contains count data, such as the number of erroneous claims. The Poisson distribution and log link function are used to model the relationship between the predictors and the anticipated number of fraud cases. Poisson regression assumes that the mean and variance of the response variable are both equal. In the case of the Negative Binomial regression, the assumption of equal mean and variance is relaxed in this extension of Poisson regression. It is employed when over dispersion, or when the variance is greater than the mean, is present in the count data. To account for the additional variation, negative binomial regression models the link between the predictors and the anticipated fraud count. Gamma regression can be used to model continuous, positively skewed response variables with a gamma distribution, such as medical expenses or claim amounts. Gamma regression takes into consideration the unique distributional characteristics of these variables, enabling more precise modeling and forecasting of the costs associated with fraud.
 
-#### Advantages of Logistic Regression in Detecting Health Insurance Fraud
+### Advantages of Logistic Regression in Detecting Health Insurance Fraud
 
 Logistic regression models can handle binary response variable distributions, making them suitable for modeling data encountered in health insurance fraud detection, such as fraud vs. non-fraud.
 
@@ -116,11 +116,11 @@ Logistic Regression Models enable testing of hypotheses regarding the importance
 
 This chapter elaborates the methodology that was used to accomplish the already established research objectives sequentially. The research design, data collection and analysis, are briefly illustrated.
 
-#### Data Source
+### Data Source
 
 The data that was used in this study is Medicare insurance data posted on Kaggle, an online portal for community of data scientists. The dataset captures individuals from age 26 to 100 and was specific whether they suffered from chronic diseases, and if so, which ones. The study used this data as the people within this age range are more likely to have health insurance. The claim behavior patterns were studied for a period of two years.
 
-#### Sampling Design
+### Sampling Design
 
 Data used in this study was from a secondary data source. This data was sampled to be a representative of Healthcare Insurance holders. The research specifically focused on outpatient data for patients who visited hospital to receive treatment but were not admitted in them, inpatient data for patients who visited hospital to receive treatment and were admitted, beneficiary data for claim beneficiaries and their identifying characteristics such as race, religion, region and whether they suffered from chronic illnesses such as heart failure.
 
@@ -136,14 +136,14 @@ The data here was for beneficiaries of each claim and their identifying characte
   
 This file contained a unique provider identifier and the class label, potential fraud, labelled Yes and No, coded as 1 and 0 respectively. For a Fraudulent claim, the claim is reviewed and if it is a No then the claim is correct to be paid. Data was aggregated at Unique claim ID for each claim made by the provider. The unique providers handling each claim were 5410.
 
-#### Data Assumptions
+### Data Assumptions
 
 There were various assumptions taken in the model and these include:
 1.	Claims can be filed more than once by a client.
 2.	All claim payments are fulfilled by insurance firms shortly after they have been filed.
 3.	All claims result in some payments.
 
-#### Model Specifications
+### Model Specifications
 
 After data preprocessing, a binary logistic regression model was fitted to the data using statistical software, since the dependent variable was binary in nature i.e., presence or absence of claim fraud makes binary logistic regression applicable. Also, since the research assumed predictor variables were not correlated, binary logistic regression became a better predictor since it also assumes absence of multicollinearity. This model was suitable for modeling health care fraud since it helped in modeling the probability that a rising claim is fraudulent. Further, the research was able to use both continuous and categorical variables in determining the probability of an upcoming claim being fraudulent. The probability values of a claim being fraudulent, π(x) ranges from 0 to 1.
 
@@ -161,16 +161,16 @@ Making π the subject of the formula, (which is the probability Y=1/X1,  X2,…,
 
 Where the vector (β_(0),β_1 〖,…β〗_n)  represents the regression coefficient and X can take the predictor variables.
 
-#### Model Assumptions
+### Model Assumptions
 
 The model does not require normally distributed data.
 The model assumed that predictor variables were not correlated. 
 
-#### Methods for achieving Objective 1 and 2
+### Methods for achieving Objective 1 and 2
 
-##### Data Preprocessing
+### Data Preprocessing
 
-     The study began by checking for missing values in the train dataset and found that there were none. The beneficiary data set was also checked and there were 63,394 missing values in the Date of Death column. This prompted the calculation of an additional column that was named ‘Whether Dead’ that indicated whether an individual was alive (No substituted by 0) or dead (Yes substituted by 1). The Age column was calculated by subtracting the data collection year and the Date of Birth of the beneficiaries. Data types for the beneficiary data were checked and replaced with 1 and 2 with 0 and 1 for No and Yes respectively in the columns showing presence of a chronic condition. The inpatient and outpatient had a lot of variables with missing data. However, another column was added for the number of days a patient was admitted for the inpatient data.
+The study began by checking for missing values in the train dataset and found that there were none. The beneficiary data set was also checked and there were 63,394 missing values in the Date of Death column. This prompted the calculation of an additional column that was named ‘Whether Dead’ that indicated whether an individual was alive (No substituted by 0) or dead (Yes substituted by 1). The Age column was calculated by subtracting the data collection year and the Date of Birth of the beneficiaries. Data types for the beneficiary data were checked and replaced with 1 and 2 with 0 and 1 for No and Yes respectively in the columns showing presence of a chronic condition. The inpatient and outpatient had a lot of variables with missing data. However, another column was added for the number of days a patient was admitted for the inpatient data.
      
 Outpatient and inpatient data sets were merged using the outer join (union) as they had many similar columns. The new data set was then merged with beneficiary data details using the inner join with Beneficiary ID as the joining key. The final dataset was then merged with train data that contained fraudulent providers’ details using provider ID as the key for the inner join (intersection). The final data set consisted of 558,218 entries with 57 variables.
 
@@ -178,13 +178,13 @@ For familiarity with the data, frequencies of fraud and non-fraud transactions w
 
 Numerical columns were imputed with 0 for the missing values then eliminated categories that would not be necessary for prediction such as Dates, diagnosis codes and IDs. Race and Gender were converted to categorical variables. The remaining dataset was aggregated to unique providers and the result was a Tibble of 5,410 entries and 30 variables which was suitable for modelling. The dataset was then normalized using a Scaler preprocessing called the MinMaxScaler method.
 
-#### Model Fitting
+### Model Fitting
 
 The combined train data was split into a training set and a validation set with a probability of 0.7 and 0.3. The training set was used to fit a logistic regression model, The dataset was rebalanced to reduce the bias towards non fraudulent claims. 
 
-#### Methods for achieving Objective 3
+### Methods for achieving Objective 3
 
-##### Performance Metrics
+#### Performance Metrics
 
 After training the data using the training set, the validation set was used to test the capability of the Logistic regression model in data prediction by using it as a prediction sample. The probability threshold for fraud was set at 0.5 to improve its sensitivity. In assessing the medical claims, the data was classified as either fraudulent or non-fraudulent. For the logistic predicted model, the study deployed a confusion matrix to compare actual counts against the predicted counts. The confusion matrix is a 2*2 matrix with true negatives (negative values that are predicted as negative), true positives (positive values that are predicted as positive), false negatives (positive values that are predicted as negative) and false positives (negative values that are predicted as positive). The metrics used in performance evaluation included accuracy, that is the sum of true positives and true negatives divided by the total number of predictions, precision which is the number of true positives divided by the sum of true positives and false positives, recall also known as model sensitivity and is calculated by the number of true positives divided by the sum of true positives and false negatives, fall-out which is calculated by false positives divided by the sum of false positives and true negatives, and the AUR-ROC which stands for the area under the receiver operating characteristic curve. The receiver operating curve is the graph of fall-out against recall, that is, the graph of false positives against true positives. The higher the area under the curve the better the model will be at predicting fraud.
 
@@ -197,45 +197,84 @@ An illustration of the confusion matrix is as follows:
 	        |  Fraudulent	|  False Negatives |  True Positives | 
 
 
+
+
  ## CHAPTER FOUR: DATA ANALYSIS, PRESENTATION, AND INTERPRETATION
- ### Introduction
+
+
  
+ ### Introduction
+
+
 This section outlines the research findings, showcasing the performance metric outcomes obtained from employing binary logistic regression technique. It demonstrates the model's credibility and feasibility, leading to appropriate conclusions.
 
-       ## Data analysis
+
+## Data analysis
+
+
 From the graph in figure 4.2.1, our data, the fraudulent cases were less than the non-fraudulent cases. Out of the total number of claims made, the percentage of fraudulent cases was 38.12% while that of non-fraudulent cases was 61.88%.
 
+
+
 ![image](https://github.com/user-attachments/assets/8042674c-7567-4695-96ae-43e0734577b4)
+
 Figure 4.2.1: Distribution of claim records
+
+
 
 In the figure 4.2.2 below, it was noted that only 9.4% of the service providers were fraudulent while the other 90.6% were non-fraudulent.
 
+
+
 ![image](https://github.com/user-attachments/assets/a5007a9f-c923-43a6-9b0f-b3d2ac14bc05)
+
 Figure 4.2.2: Potential fraud among providers
 
+
+  
 State-wise distribution of beneficiaries was as follows: Arkansas had the maximum number of beneficiaries while Alaska had the least number of beneficiaries as shown in figure 
 
+
+
 ![image](https://github.com/user-attachments/assets/c6dad6f3-d7e0-4087-9a95-fda5f53df63d)
+
 Figure 4.2.3: State-wise beneficiary distribution
+
+
 
 According to figure 4.2.4 below, Race 1 (Whites/Caucasian) had the highest percentage of beneficiaries and Race 5 (Australoid) had the least percentage of beneficiaries.
 
+
+
 ![image](https://github.com/user-attachments/assets/a6bcf38a-a894-43ab-a885-b3fdec9bc514)
+
 Figure 4.2.4: Race-wise Beneficiary Distribution
+
+
 
 According to figure 4.2.5 below, it is shown that the fraudulent cases were high compared to the non-fraudulent cases in all the procedures. The procedure transfusion of packed cells had the most fraudulent claim counts.
 
 
+
 ![image](https://github.com/user-attachments/assets/caf5a14d-d1ba-4884-ad7f-bd2edee8ab54)
+
 Figure 4.2.5: Top 10 procedures involved in healthcare fraud
+
+
 
 Figure 4.2.6 shows that claim diagnosis 4019 (Unspecified essential hypertension) was highly fraudulent followed by diagnosis 4011 (Benign essential hypertension).
 
+
 ![image](https://github.com/user-attachments/assets/e996601a-654d-4db1-9e65-7906ad0695b2)
+
 Figure 4.2.6: Top10 Diagnosis involved in Healthcare Fraud 1
+
+
 
 ### Binary logistic model
 The general fitted binary logistic regression model is as shown below.
+
+
           Optimization was terminated with the value at 0.1766880 after 8 iterations
 
 Dependence variable	Potential fraud
@@ -251,7 +290,9 @@ LLR p-value	1.87e-195
 Covariance type	Non-robust
 
 
+
 ### Testing for significance
+
 
 Using the p-value approach (that is, when the p-value is less than the level of confidence, the variable is significant), our significant variables were Insurance claim amount reimbursed, the deductible amount paid, whether the individual was alive or dead, as well as the chronic conditions Depression and rheumatoid arthritis.
 
@@ -268,31 +309,52 @@ log⁡(π/(1-π)) = -0.766993+3.392273X_1-2.367368X_2+1.200192X_13  -0.704476X_1
 π(x)=〖e 〗^(-0.766993+3.392273X_1-2.367368X_2+1.200192X_13-0.704476X_17+ 0.08648X_24 )/(1+〖e 〗^(-0.766993+3.392273X_1-2.367368X_2+1.200192X_13-0.704476X_17+ 0.08648X_24 ) ) 
 
 
-        ### Performance Metrics
+### Performance Metrics
+
+
 The Area under the Curve was high with a value of 92% after training the model.
 
+
+
 ![image](https://github.com/user-attachments/assets/eb4beab4-dc7f-43b9-8184-9edfb94cace1)
+
 Figure 4.4.1: Receiver Operating Characteristic
 
+
+
 The confusion matrix was given by:
+
+
 
 ![image](https://github.com/user-attachments/assets/dd02fb43-c5ba-425d-8292-00c6e38f4e03)
 
 
-The model predicted 1361 claims as non-fraudulent when they were non-fraudulent and correctly predicted 95 fraudulent claims. 
+
+
+The model predicted 1361 claims as non-fraudulent when they were non-fraudulent and correctly predicted 95 fraudulent claims.
+
 The accuracy of the model was 89.71%. This means that the model had 89.71% correct predictions. The model’s specificity was 92.52%. The model had high specificity meaning that it was successful at avoiding false alarms or false positives when the true label was negative. The model’s sensitivity was 62.5% which suggested that the model is not as strong at correctly identifying instances of fraudulent claims as compared to the non-fraudulent claims as shown in figure 4.4.2 below.
 
+
+
 ![image](https://github.com/user-attachments/assets/1cd37eb3-6116-484d-945e-af233fdbb008)
+
 Figure 4.4.2: True Positive Rate vs True negative Rate
 
+
+
  The F1-score was 53.22% suggesting that the model maintains a reasonable balance between precision and recall, but it was skewed toward specificity. Overall, the model performed well.
+
+
 
 
 
 ## CHAPTER FIVE: CONCLUSION
 
 
+
 ### Conclusion
+
 
 The insurance industry faces health insurance fraud, which affects medical pricing and access across all socioeconomic groups. The regulatory bodies have reported more fraudulent health insurance claims, emphasizing the need to solve this issue quickly. Fraudulent activities cost insurance companies a lot of money and burden public healthcare programs, which hurts patients. The research sought to illuminate the issue's magnitude, its effects, and the need for effective diagnosis and prevention.
 
@@ -300,7 +362,9 @@ Logistic regression was used to model health insurance claims fraud in the resea
 
 Ultimately, the fight against health insurance fraud is constant and ever-changing. The methods and technologies used to detect and prevent fraud must evolve. The Kenyan insurance industry can protect policyholders, limit costs, and preserve the healthcare system by following these rules and remaining alert. To provide affordable healthcare for all is a moral and economic obligation.
 
+
 ### Recommendations
+
 
 Health insurance fraud remains to be a challenge that requires a varied approach to detection and prevention. Insurance companies, government agencies, and healthcare providers must collaborate better. This cooperative effort should involve fraud data exchange to improve fraud detection and investigation.
 
@@ -315,48 +379,90 @@ Public awareness initiatives should inform policyholders about insurance fraud a
  
 ## GLOSSARY
 IRA-Insurance Regulatory Authority
+
 NHIF-National Hospital Insurance Fund
+
 AI-Artificial Intelligence
+
 IFIU-Insurance Fraud Investigation Unit
+
 NAIC-National Association of Insurance Commissioners
+
 AUROC-Area Under the Receiver Operating Characteristic Curve
+
 NHCAA-National Health Care Anti-Fraud Association
+
 AKI- Association of Kenya Insurers
+
 DT- Decision Trees
+
 SVN-Support Vector Machine
+
 KNN- K-Nearest Neighbor
+
 RF- Random Forest
+
 NN-Nearest Neighbor
+
 ML-Machine Learning
+
 ANN-Artificial Neural Network
+
 GLM- Generalized Linear Model
+
 MLE- Maximum likelihood Estimator
 
 
+
 ## REFERENCES
+
+
 Alam MN, Podder P, Bharati S, Mondal MRH (2021). Effective machine learning approaches for credit card fraud detection. Cham: Springer.
+
 Alushula, P. (2021, August 23). NHIF audit report uncovers fraudulent hospital claims. Business Daily.
+
 Arnold, K. F., Davies, V., de Kamps, M., Tennant, P. W. G., Mbotwa, J., & Gilthorpe, M. S. (2020). Reflection on modern methods: generalized linear models for prognosis and intervention—theory, practice, and implications for machine learning. International Journal of Epidemiology, 49(6), 2074–2082. 
+
 Association of Kenyan Insurers. (2021). Information Paper on Insurance Fraud. 
+
 Bhatore, S., Mohan, L. & Reddy, Y.R. Machine learning techniques for credit risk evaluation: a systematic literature review. J BANK FINANC TECHNOL 4, 111–138 (2020).
+
 Bin Sulaiman, R., Schetinin, V. & Sant, P. (2022) Review of Machine Learning Approach on Credit Card Fraud Detection. 
+
 Carmi, G., & Segal, S. Y. (2014). Mobile Security: A Review of New Advanced Technologies to Detect and Prevent E-Payment Mobile Frauds. Int. J. Comput. Syst, 292(4), 2394-1065.
+
 Darwish S. M. (2019): An intelligent credit card fraud detection approach based on semantic fussion of two classifiers. Soft Compute
+
 Henckaerts, R., Côté, M. P., Antonio, K., & Verbelen, R. (2021). Boosting insights in insurance tariff plans with tree-based machine learning methods. North American Actuarial Journal, 25(2), 255-285.
+
 International Social Security Association (ISSA), 4 July 2022. “Detecting fraud in health care through emerging technologies.”
+
 IRA. (2020). INSURANCE INDUSTRY ANNUAL REPORT 2020. 
+
 Kumaraswamy N, Markey MK, Ekin T, Barner JC, Rascati K. 2022 Jan 1; 19. Healthcare Fraud Data Mining Methods: A Look Back and Look Ahead. Perspect Health Inf Manag. 
+
 Lu, Y. C. (2021). Relational Outlier Detection: Techniques and Applications (Doctoral dissertation, Virginia Tech).
+
 Maher, P. (2020). The Seven Most Popular Machine Learning Algorithms for Online Fraud Detection and Their Use in SAS®. 
+
 Mambo, S., & Moturi, C. (2022). Towards Better Detection of Fraud in Health Insurance Claims in Kenya: Use of Naïve Bayes Classification Algorithm. East African Journal of Information Technology, 5(1), 244-255.
+
 Makkar, R. R., Saraswat, B. K., & Pandey (2023). M. Predicting Health Expenses Using Linear Regression. 
+
 Mitic, I. (2023). The Fraudster Next Door: 30 Insurance Fraud Statistics. Fortunly.
+
 NAIC. (2022, December 19). Insurance Fraud. Content.naic.org.
+
 Samantha Rohn. (June 23, 2022). “The Future of Insurance Fraud Detection is Predictive Analytics”. whatfix.com. 
+
 Sriram Sasank JVV, Sahith GR, Abhinav K, Belwal M (2019). Credit card fraud detection using various classification and sampling techniques: a comparative study.
+
 Taitsman, J. K., Grimm, C. M., & Agrawal, S. (2019). Protecting patient privacy and data security. New England Journal of Medicine, 368(11), 977-979.
+
 Villegas-Ortega, J., Bellido-Boza, L. & Mauricio, D. Health Justice 9, 26 (2021). Fourteen years of manifestations and factors of health insurance fraud, 2006–2020: a scoping review.
+
 Yadav, V. (2021). Prediction and detection analysis of bank credit card fraud using regression model: novel approach. Prediction and detection analysis of bank credit card fraud using regression model: novel approach. Turkish Online Journal of Qualitative Inquiry (TOJQI), 12(7), 14085–14098. 
+
 Zhang C, Xiao X, Wu C, (2020): Medical Fraud and Abuse Detection System Based on Machine Learning.  International Journal of Environmental Research and Public Health.
 
 
