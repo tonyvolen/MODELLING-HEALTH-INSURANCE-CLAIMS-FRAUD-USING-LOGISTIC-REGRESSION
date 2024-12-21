@@ -190,3 +190,8 @@ After training the data using the training set, the validation set was used to t
 
 An illustration of the confusion matrix is as follows:
 
+
+		        |             Predicted              |
+		        | Non- Fraudulent |   Fraudulent     |
+       Actual 	|Non- Fraudulent|  True Negatives  | False Positives |
+	        |  Fraudulent	|  False Negatives |  True Positives |  
