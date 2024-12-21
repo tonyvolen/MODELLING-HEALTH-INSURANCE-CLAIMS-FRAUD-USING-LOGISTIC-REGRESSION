@@ -467,3 +467,95 @@ Zhang C, Xiao X, Wu C, (2020): Medical Fraud and Abuse Detection System Based on
 
 
 
+## APPENDICES
+
+
+### States and their Codes
+
+State 			Code			State			Code
+Alabama		 01	                         Nebraska		31
+Alaska 		 02	                         Nevada		32
+Arizona    		 04	                         New Hampshire	33
+Arkansas  		 05	                         New Jersey		34
+California 		06	                         New Mexico		35
+Colorado  		 08	             	New York		36
+Connecticut		 09	 		North Carolina	37
+Delaware  		10	             	North Dakota		38
+District of Columbia	11			Ohio	 		39
+Florida			12			Oklahoma		40
+Georgia		13			Oregon			41
+Hawaii			15			Pennsylvania		42
+Idaho			16			Puerto Rico		72
+Illinois			17			Rhode Island		44
+Indiana			18			South Carolina	45
+Iowa			19			South Dakota		46
+Kansas	KS		20			Tennessee		47
+Kentucky		21			Texas			48
+Louisiana		22			Utah			49
+Maine	ME		23			Vermont		50
+Maryland		24	Virginia				51
+Massachusetts		25	Virgin Islands				78
+Michigan		26	Washington				53
+Minnesota		27	West Virginia				54
+Mississippi		28	Wisconsin				55
+Missouri		29	Wyoming				56
+Montana		        30
+
+
+
+### Top 10 diagnosis involved in health fraud and their codes
+
+
+4019- Unspecified essential hypertension
+
+4011- Benign essential hypertension
+
+2720- Pure hypercholesterolemia
+
+2724- Other and unspecified hyperlipidemia
+
+2722- Mixed hyperlipidemia
+
+2721- Pure hyperglyceridemia
+
+2723- Hyperchylomicronemia
+
+78659- Other chest pain
+
+42731- Atrial fibrillation
+
+78650- Chest pain, unspecified
+
+
+
+### Top 10procedures involved in health care frauds and their codes
+
+
+9904.0- Transfusion of packed cells
+
+8154.0- Total knee replacement
+
+66.0- Percutaneous transluminal coronary angioplasty [PTCA]
+
+3893.0- Venous catheterization, not elsewhere classified
+
+3995.0- Hemodialysis
+
+4516.0- Esophagogastroduodenoscopy [EGD] with closed biopsy
+
+3722.0- Left heart cardiac catheterization
+
+8151.0- Total hip replacement
+
+8872.0- Diagnostic ultrasound of heart
+
+9671.0- Continuous invasive mechanical ventilation for less than 96 consecutive hours
+
+
+
+
+### Races and their Codes
+1-	White/Caucasian
+2-	Mongoloid/Asian
+3-	Negroid/Black
+5-	Australoid
