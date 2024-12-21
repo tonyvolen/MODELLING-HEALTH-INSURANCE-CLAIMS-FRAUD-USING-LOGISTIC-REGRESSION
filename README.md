@@ -191,7 +191,173 @@ After training the data using the training set, the validation set was used to t
 An illustration of the confusion matrix is as follows:
 
 
-		        |             Predicted              |
-		        | Non- Fraudulent |   Fraudulent     |
+		                |             Predicted              |
+		                | Non- Fraudulent |   Fraudulent     |
        Actual 	|Non- Fraudulent|  True Negatives  | False Positives |
-	        |  Fraudulent	|  False Negatives |  True Positives |  
+	        |  Fraudulent	|  False Negatives |  True Positives | 
+
+
+ ## CHAPTER FOUR: DATA ANALYSIS, PRESENTATION, AND INTERPRETATION
+ ### Introduction
+ 
+This section outlines the research findings, showcasing the performance metric outcomes obtained from employing binary logistic regression technique. It demonstrates the model's credibility and feasibility, leading to appropriate conclusions.
+
+       ## Data analysis
+From the graph in figure 4.2.1, our data, the fraudulent cases were less than the non-fraudulent cases. Out of the total number of claims made, the percentage of fraudulent cases was 38.12% while that of non-fraudulent cases was 61.88%.
+
+![image](https://github.com/user-attachments/assets/8042674c-7567-4695-96ae-43e0734577b4)
+Figure 4.2.1: Distribution of claim records
+
+In the figure 4.2.2 below, it was noted that only 9.4% of the service providers were fraudulent while the other 90.6% were non-fraudulent.
+
+![image](https://github.com/user-attachments/assets/a5007a9f-c923-43a6-9b0f-b3d2ac14bc05)
+Figure 4.2.2: Potential fraud among providers
+
+State-wise distribution of beneficiaries was as follows: Arkansas had the maximum number of beneficiaries while Alaska had the least number of beneficiaries as shown in figure 
+
+![image](https://github.com/user-attachments/assets/c6dad6f3-d7e0-4087-9a95-fda5f53df63d)
+Figure 4.2.3: State-wise beneficiary distribution
+
+According to figure 4.2.4 below, Race 1 (Whites/Caucasian) had the highest percentage of beneficiaries and Race 5 (Australoid) had the least percentage of beneficiaries.
+
+![image](https://github.com/user-attachments/assets/a6bcf38a-a894-43ab-a885-b3fdec9bc514)
+Figure 4.2.4: Race-wise Beneficiary Distribution
+
+According to figure 4.2.5 below, it is shown that the fraudulent cases were high compared to the non-fraudulent cases in all the procedures. The procedure transfusion of packed cells had the most fraudulent claim counts.
+
+
+![image](https://github.com/user-attachments/assets/caf5a14d-d1ba-4884-ad7f-bd2edee8ab54)
+Figure 4.2.5: Top 10 procedures involved in healthcare fraud
+
+Figure 4.2.6 shows that claim diagnosis 4019 (Unspecified essential hypertension) was highly fraudulent followed by diagnosis 4011 (Benign essential hypertension).
+
+![image](https://github.com/user-attachments/assets/e996601a-654d-4db1-9e65-7906ad0695b2)
+Figure 4.2.6: Top10 Diagnosis involved in Healthcare Fraud 1
+
+### Binary logistic model
+The general fitted binary logistic regression model is as shown below.
+          Optimization was terminated with the value at 0.1766880 after 8 iterations
+
+Dependence variable	Potential fraud
+Model	Logit
+Method	MLE
+Number of observations	3787
+Degrees of freedom for residual	3758
+Degrees of freedom for the model	28
+Pseudo R-squared	0.4310
+Log-Likelihood	-669.09
+True LL-Null	-1175.9
+LLR p-value	1.87e-195
+Covariance type	Non-robust
+
+
+### Testing for significance
+
+Using the p-value approach (that is, when the p-value is less than the level of confidence, the variable is significant), our significant variables were Insurance claim amount reimbursed, the deductible amount paid, whether the individual was alive or dead, as well as the chronic conditions Depression and rheumatoid arthritis.
+
+Insurance claim amount reimbursed has a co-efficient of 3.392273 implying an increase in the reimbursement amount will lead to an increase in fraudulent cases. Similarly, variable X_13 (Chronic condition depression) has a co-efficient of 1.200192 implying it positively affects the model and so do variable X_24 (Whether dead or alive). The other variables, X_1 (Deductible amount paid) and X_17 (Chronic condition rheumatoid arthritis), negatively affect the model hence a unit increase in any of these variables implies a decrease in potential fraudulent claims. 
+
+The fitted model was:
+
+logit(x)= -0.766993+3.392273X_1-2.367368X_2+1.200192X_13  -0.704476X_17  + 0.08648 X_24
+
+logit(x)=log⁡(π/(1-π)) 
+
+log⁡(π/(1-π)) = -0.766993+3.392273X_1-2.367368X_2+1.200192X_13  -0.704476X_17  + 0.08648 X_24
+
+π(x)=〖e 〗^(-0.766993+3.392273X_1-2.367368X_2+1.200192X_13-0.704476X_17+ 0.08648X_24 )/(1+〖e 〗^(-0.766993+3.392273X_1-2.367368X_2+1.200192X_13-0.704476X_17+ 0.08648X_24 ) ) 
+
+
+        ### Performance Metrics
+The Area under the Curve was high with a value of 92% after training the model.
+
+![image](https://github.com/user-attachments/assets/eb4beab4-dc7f-43b9-8184-9edfb94cace1)
+Figure 4.4.1: Receiver Operating Characteristic
+
+The confusion matrix was given by:
+
+![image](https://github.com/user-attachments/assets/dd02fb43-c5ba-425d-8292-00c6e38f4e03)
+
+
+The model predicted 1361 claims as non-fraudulent when they were non-fraudulent and correctly predicted 95 fraudulent claims. 
+The accuracy of the model was 89.71%. This means that the model had 89.71% correct predictions. The model’s specificity was 92.52%. The model had high specificity meaning that it was successful at avoiding false alarms or false positives when the true label was negative. The model’s sensitivity was 62.5% which suggested that the model is not as strong at correctly identifying instances of fraudulent claims as compared to the non-fraudulent claims as shown in figure 4.4.2 below.
+
+![image](https://github.com/user-attachments/assets/1cd37eb3-6116-484d-945e-af233fdbb008)
+Figure 4.4.2: True Positive Rate vs True negative Rate
+
+ The F1-score was 53.22% suggesting that the model maintains a reasonable balance between precision and recall, but it was skewed toward specificity. Overall, the model performed well.
+
+
+
+## CHAPTER FIVE: CONCLUSION
+
+
+### Conclusion
+
+The insurance industry faces health insurance fraud, which affects medical pricing and access across all socioeconomic groups. The regulatory bodies have reported more fraudulent health insurance claims, emphasizing the need to solve this issue quickly. Fraudulent activities cost insurance companies a lot of money and burden public healthcare programs, which hurts patients. The research sought to illuminate the issue's magnitude, its effects, and the need for effective diagnosis and prevention.
+
+Logistic regression was used to model health insurance claims fraud in the research. Available data was used to create a logistic regression model, trained the algorithm, and assessed its performance using key metrics. This study showed promise for detecting fraudulent claims using contemporary data analytics and machine learning. An approach which could greatly benefit the insurance industry.
+
+Ultimately, the fight against health insurance fraud is constant and ever-changing. The methods and technologies used to detect and prevent fraud must evolve. The Kenyan insurance industry can protect policyholders, limit costs, and preserve the healthcare system by following these rules and remaining alert. To provide affordable healthcare for all is a moral and economic obligation.
+
+### Recommendations
+
+Health insurance fraud remains to be a challenge that requires a varied approach to detection and prevention. Insurance companies, government agencies, and healthcare providers must collaborate better. This cooperative effort should involve fraud data exchange to improve fraud detection and investigation.
+
+Second, insurance companies must urgently invest in data analytics and machine learning. These systems may detect subtle trends and abnormalities that signal fraud, greatly improving fraudulent claim detection. By adopting these changes, insurance companies can combat rising fraud.
+
+Moreover, insurance professionals, claims adjusters, and investigators need ongoing training. These apps should keep users up to date on the latest fraud detection and prevention methods. Fraud prevention requires seeing red flags and conducting thorough investigations.
+
+Additionally, real-time monitoring mechanisms must be implemented. These technologies can detect irregularities and fraud in claim data as it is processed. Real-time monitoring reduces false claim costs by acting quickly.
+
+Public awareness initiatives should inform policyholders about insurance fraud and encourage them to report suspicious conduct. Informing the public can help deter false claims. These measures can instill policyholders' responsibility and participation in insurance system integrity.
+
+ 
+## GLOSSARY
+IRA-Insurance Regulatory Authority
+NHIF-National Hospital Insurance Fund
+AI-Artificial Intelligence
+IFIU-Insurance Fraud Investigation Unit
+NAIC-National Association of Insurance Commissioners
+AUROC-Area Under the Receiver Operating Characteristic Curve
+NHCAA-National Health Care Anti-Fraud Association
+AKI- Association of Kenya Insurers
+DT- Decision Trees
+SVN-Support Vector Machine
+KNN- K-Nearest Neighbor
+RF- Random Forest
+NN-Nearest Neighbor
+ML-Machine Learning
+ANN-Artificial Neural Network
+GLM- Generalized Linear Model
+MLE- Maximum likelihood Estimator
+
+
+## REFERENCES
+Alam MN, Podder P, Bharati S, Mondal MRH (2021). Effective machine learning approaches for credit card fraud detection. Cham: Springer.
+Alushula, P. (2021, August 23). NHIF audit report uncovers fraudulent hospital claims. Business Daily.
+Arnold, K. F., Davies, V., de Kamps, M., Tennant, P. W. G., Mbotwa, J., & Gilthorpe, M. S. (2020). Reflection on modern methods: generalized linear models for prognosis and intervention—theory, practice, and implications for machine learning. International Journal of Epidemiology, 49(6), 2074–2082. 
+Association of Kenyan Insurers. (2021). Information Paper on Insurance Fraud. 
+Bhatore, S., Mohan, L. & Reddy, Y.R. Machine learning techniques for credit risk evaluation: a systematic literature review. J BANK FINANC TECHNOL 4, 111–138 (2020).
+Bin Sulaiman, R., Schetinin, V. & Sant, P. (2022) Review of Machine Learning Approach on Credit Card Fraud Detection. 
+Carmi, G., & Segal, S. Y. (2014). Mobile Security: A Review of New Advanced Technologies to Detect and Prevent E-Payment Mobile Frauds. Int. J. Comput. Syst, 292(4), 2394-1065.
+Darwish S. M. (2019): An intelligent credit card fraud detection approach based on semantic fussion of two classifiers. Soft Compute
+Henckaerts, R., Côté, M. P., Antonio, K., & Verbelen, R. (2021). Boosting insights in insurance tariff plans with tree-based machine learning methods. North American Actuarial Journal, 25(2), 255-285.
+International Social Security Association (ISSA), 4 July 2022. “Detecting fraud in health care through emerging technologies.”
+IRA. (2020). INSURANCE INDUSTRY ANNUAL REPORT 2020. 
+Kumaraswamy N, Markey MK, Ekin T, Barner JC, Rascati K. 2022 Jan 1; 19. Healthcare Fraud Data Mining Methods: A Look Back and Look Ahead. Perspect Health Inf Manag. 
+Lu, Y. C. (2021). Relational Outlier Detection: Techniques and Applications (Doctoral dissertation, Virginia Tech).
+Maher, P. (2020). The Seven Most Popular Machine Learning Algorithms for Online Fraud Detection and Their Use in SAS®. 
+Mambo, S., & Moturi, C. (2022). Towards Better Detection of Fraud in Health Insurance Claims in Kenya: Use of Naïve Bayes Classification Algorithm. East African Journal of Information Technology, 5(1), 244-255.
+Makkar, R. R., Saraswat, B. K., & Pandey (2023). M. Predicting Health Expenses Using Linear Regression. 
+Mitic, I. (2023). The Fraudster Next Door: 30 Insurance Fraud Statistics. Fortunly.
+NAIC. (2022, December 19). Insurance Fraud. Content.naic.org.
+Samantha Rohn. (June 23, 2022). “The Future of Insurance Fraud Detection is Predictive Analytics”. whatfix.com. 
+Sriram Sasank JVV, Sahith GR, Abhinav K, Belwal M (2019). Credit card fraud detection using various classification and sampling techniques: a comparative study.
+Taitsman, J. K., Grimm, C. M., & Agrawal, S. (2019). Protecting patient privacy and data security. New England Journal of Medicine, 368(11), 977-979.
+Villegas-Ortega, J., Bellido-Boza, L. & Mauricio, D. Health Justice 9, 26 (2021). Fourteen years of manifestations and factors of health insurance fraud, 2006–2020: a scoping review.
+Yadav, V. (2021). Prediction and detection analysis of bank credit card fraud using regression model: novel approach. Prediction and detection analysis of bank credit card fraud using regression model: novel approach. Turkish Online Journal of Qualitative Inquiry (TOJQI), 12(7), 14085–14098. 
+Zhang C, Xiao X, Wu C, (2020): Medical Fraud and Abuse Detection System Based on Machine Learning.  International Journal of Environmental Research and Public Health.
+
+
+
