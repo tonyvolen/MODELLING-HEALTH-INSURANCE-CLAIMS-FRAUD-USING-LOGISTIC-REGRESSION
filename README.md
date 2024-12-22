@@ -192,6 +192,7 @@ An illustration of the confusion matrix is as follows:
 
 
 		                |             Predicted              |
+		                |:----------------------------------:|
 		                | Non- Fraudulent |   Fraudulent     |
        Actual 	|Non- Fraudulent|  True Negatives  | False Positives |
 	        |  Fraudulent	|  False Negatives |  True Positives | 
@@ -277,17 +278,20 @@ The general fitted binary logistic regression model is as shown below.
 
           Optimization was terminated with the value at 0.1766880 after 8 iterations
 
-Dependence variable	Potential fraud
-Model	Logit
-Method	MLE
-Number of observations	3787
-Degrees of freedom for residual	3758
-Degrees of freedom for the model	28
-Pseudo R-squared	0.4310
-Log-Likelihood	-669.09
-True LL-Null	-1175.9
-LLR p-value	1.87e-195
-Covariance type	Non-robust
+
+
+| Dependence variable              | Potential fraud |
+|----------------------------------|-----------------|
+| Model                            | Logit           |
+| Method                           | MLE             |
+| Number of observations           | 3787            |
+| Degrees of freedom for residual  | 3758            |
+| Degrees of freedom for the model | 28              |
+| Pseudo R-squared                 | 0.4310          |
+| Log-Likelihood                   | -669.09         |
+| True LL-Null                     | -1175.9         |
+| LLR p-value                      | 1.87e-195       |
+| Covariance type                  | Non-robust      |
 
 
 
