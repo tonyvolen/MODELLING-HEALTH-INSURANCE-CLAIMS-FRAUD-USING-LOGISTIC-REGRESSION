@@ -191,11 +191,12 @@ After training the data using the training set, the validation set was used to t
 An illustration of the confusion matrix is as follows:
 
 
-		                |             Predicted              |
-		                |:----------------------------------:|
-		                | Non- Fraudulent |   Fraudulent     |
-       Actual 	|Non- Fraudulent|  True Negatives  | False Positives |
-	        |  Fraudulent	|  False Negatives |  True Positives | 
+
+|        |                 | Predicted       |                 |
+|--------|-----------------|-----------------|-----------------|
+|        |                 | Non- Fraudulent | Fraudulent      |
+| Actual | Non- Fraudulent | True Negatives  | False Positives |
+|        | Fraudulent      | False Negatives | True Positives  |
 
 
 
@@ -276,7 +277,7 @@ Figure 4.2.6: Top10 Diagnosis involved in Healthcare Fraud 1
 The general fitted binary logistic regression model is as shown below.
 
 
-          Optimization was terminated with the value at 0.1766880 after 8 iterations
+ Optimization was terminated with the value at 0.1766880 after 8 iterations
 
 
 
@@ -292,6 +293,39 @@ The general fitted binary logistic regression model is as shown below.
 | True LL-Null                     | -1175.9         |
 | LLR p-value                      | 1.87e-195       |
 | Covariance type                  | Non-robust      |
+
+
+| Variable                          | Coefficient | Std. Error | Z score   | P-value  |
+|-----------------------------------|-------------|------------|-----------|----------|
+| Intercept                         | -0.766993   | 0.578034   | 5.852817  | 4.83E-09 |
+| Insurance Claim Amount Reimbursed | 3.392273    | 0.66024    | -4.520282 | 6.18E-06 |
+| Deductible Amount Paid            | -2.367368   | 0.607397   | 3.320912  | 8.97E-04 |
+| Days of Admission                 | 2.75583     | 0.140668   | 0.447706  | 6.54E-01 |
+| State                             | 0.097752    | 0.166542   | 1.372727  | 1.70E-01 |
+| County                            | 0.392772    | 13.690409  | 0.79903   | 4.24E-01 |
+| Number of Months Covered(A)       | -0.102887   | 13.922157  | -0.259819 | 7.95E-01 |
+| Number of Months Covered (B)      | -0.125375   | 0.822234   | -0.440217 | 6.60E-01 |
+| Alzheimer                         | -0.411113   | 1.366685   | 0.06123   | 9.51E-01 |
+| Heart failure                     | 0.799395    | 0.995665   | 0.698964  | 4.85E-01 |
+| Kidney Disease                    | -0.169096   | 0.426027   | -1.025596 | 3.05E-01 |
+| Cancer                            | -0.742661   | 0.713785   | -0.314605 | 7.53E-01 |
+| Obstructive Pulmonary             | 0.426464    | 0.903044   | 0.805802  | 4.20E-01 |
+| Depression                        | 1.200192    | 2.060881   | -2.592433 | 9.53E-03 |
+| Diabetes                          | -1.188673   | 2.14549    | 0.45342   | 6.50E-01 |
+| Ischemic Heart                    | 0.245455    | 0.739077   | -0.640414 | 5.22E-01 |
+| Osteoporosis                      | -0.280937   | 0.720675   | 0.094939  | 9.24E-01 |
+| Rheumatoid arthritis              | -0.704476   | 0.318729   | 2.632536  | 8.48E-03 |
+| Stroke                            | 0.515285    | 0.566608   | -1.025811 | 3.05E-01 |
+| IP Annual Reimbursement Amount    | -0.498351   | 0.544542   | 0.145737  | 8.84E-01 |
+| Annual Deductible Amount          | -0.859198   | 1.054572   | -0.428809 | 6.68E-01 |
+| Annual Reimbursement Amount       | 0.435262    | 1.080475   | 1.312376  | 1.89E-01 |
+| OP Annual Deductible Amount       | 0.661865    | 4.613631   | -1.437928 | 1.50E-01 |
+| Age                               | -0.843984   | 0.10915    | 0.171069  | 8.64E-01 |
+| Whether Dead                      | 0.08648     | 1.016708   | 2.029992  | 4.24E-02 |
+| Female                            | 1.052072    | 0.158847   | -1.81977  | 6.88E-02 |
+| Mongoloid/Asian                   | -0.109052   | 0.209757   | 1.8527    | 6.39E-02 |
+| Negroid/Black                     | 0.380787    | 0.150796   | -1.831006 | 6.71E-02 |
+|                                   |             |            |           |          |
 
 
 
