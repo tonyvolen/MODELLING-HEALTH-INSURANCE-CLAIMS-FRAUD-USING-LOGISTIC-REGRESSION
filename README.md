@@ -510,61 +510,7 @@ Zhang C, Xiao X, Wu C, (2020): Medical Fraud and Abuse Detection System Based on
 
 ### States and their Codes
 
-#### State 			Code			State			Code
 
-  Alabama		         01	                Nebraska		31
-  
-   Alaska 		         02	                Nevada		        32
-   
-   Arizona    		         04	                New Hampshire	        33
-   
-   Arkansas  		         05	                New Jersey		34
-   
-   California 		         06	                New Mexico		35
-   
-   Colorado  		         08	             	New York		36
-   
-   Connecticut		         09	 		North Carolina	        37
-   
-   Delaware  		         10	             	North Dakota		38
-   
-   District of Columbia	         11			Ohio	 		39
-   
-   Florida			 12			Oklahoma		40
-   
-   Georgia	   	         13			Oregon			41
-   
-   Hawaii			 15			Pennsylvania		42
-   
-   Idaho			 16			Puerto Rico		72
-   
-   Illinois			 17			Rhode Island		44
-   
-   Indiana			 18			South Carolina	        45
-   
-   Iowa			         19			South Dakota		46
-   
-   Kansas	KS		 20			Tennessee		47
-   
-   Kentucky		         21			Texas			48
-   
-   Louisiana		         22			Utah			49
-   
-   Maine	ME		 23			Vermont		        50
-   
-   Maryland		         24	                Virginia	        51
-   
-   Massachusetts		 25	                Virgin Islands	        78
-   
-   Michigan		         26	                Washington		53
-   
-   Minnesota		         27	                West Virginia		54
-   
-   Mississippi		         28	                Wisconsin		55
-   
-   Missouri		         29	                Wyoming		        56
-   
-   Montana		         30
 
 
 
@@ -625,7 +571,7 @@ Zhang C, Xiao X, Wu C, (2020): Medical Fraud and Abuse Detection System Based on
 
 
 
-### Top 10procedures involved in health care frauds and their codes
+### Top 10 procedures involved in health care frauds and their codes
 
 
 9904.0- Transfusion of packed cells
