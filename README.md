@@ -8,6 +8,45 @@ The insurance industry is plagued by health insurance fraud in Kenya. Health ins
 ## TABLE OF CONTENTS
 
 
+- [Abstract](#abstract)
+- [CHAPTER ONE: INTRODUCTION](#chapter-one:-introduction)
+- [Background of the Study](#background-of-the-study)
+- [Statement of the Problem](#statement-of-the-problem)
+- [Research Objectives](#research-objectives)
+- [Significance of the Study](#significance-of-the-study)
+- [Scope](#scope)
+- [CHAPTER TWO: LITERATURE REVIEW](#chapter-two:-literature-review)
+- [Introduction](#introduction)
+- [Application of Machine Learning in Health Insurance Fraud Detection](#application-of-machine-learning-in-health-insurance-fraud-detection)
+- [Generalized Linear Models](#generalized-linear-models)
+- [Advantages of Logistic Regression in Detecting Health Insurance Fraud](#advantages-of-logistic-regression-in-detecting-health-insurance-fraud)
+- [Research gap](#research-gap)
+- [CHAPTER THREE: METHODOLOGY](#chapter-three:-methodology)
+- [Introduction](#introduction)
+- [Data Source](#data-source)
+- [Sampling Design](#sampling-design)
+- [Data Assumptions](#data-assumptions)
+- [Model Specifications](#model-specifications)
+- [Model Assumptions](#model-assumptions)
+- [Methods for achieving Objective 1 and 2](#methods-for-achieving-objective-1-and-2)
+- [Methods for achieving Objective 3](#methods-for-achieving-objective-3)
+- [CHAPTER FOUR: DATA ANALYSIS, PRESENTATION, AND INTERPRETATION](#chapter-four:-data-analysis,-presentation,-and-interpretation)
+- [Introduction](#introduction)
+- [ Data Analysis](#data-analysis)
+- [Binary logistic model](#binary-logistic-model)
+- [Testing for significance](#testing-for-significance)
+- [Performance Metrics](#performance-metrics)
+- [CHAPTER FIVE: CONCLUSION](#chapter-five:-conclusion)
+- [Conclusion](#conclusion)
+- [Recommendations](#recommendations)
+- [GLOSSARY](#glossary)
+- [REFERENCES](#references)
+- [States and their Codes](#states-and-their-codes)
+- [Top 10 diagnosis involved in health fraud and their codes](#top-10-diagnosis-involved-in-health-fraud-and-their-codes)
+- [Top 10 procedures involved in health care frauds and their codes](#top-10-procedures-involved-in-health-care-frauds-and-their-codes)
+- [Races and their Codes](#race-and-their-codes)
+  
+
 
 ## TABLE OF FIGURES
 
@@ -211,7 +250,7 @@ An illustration of the confusion matrix is as follows:
 This section outlines the research findings, showcasing the performance metric outcomes obtained from employing binary logistic regression technique. It demonstrates the model's credibility and feasibility, leading to appropriate conclusions.
 
 
-## Data analysis
+## Data Analysis
 
 
 From the graph in figure 4.2.1, our data, the fraudulent cases were less than the non-fraudulent cases. Out of the total number of claims made, the percentage of fraudulent cases was 38.12% while that of non-fraudulent cases was 61.88%.
