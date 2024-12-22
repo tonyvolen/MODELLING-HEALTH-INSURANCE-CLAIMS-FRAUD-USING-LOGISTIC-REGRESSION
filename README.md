@@ -44,12 +44,19 @@ The insurance industry is plagued by health insurance fraud in Kenya. Health ins
 - [States and their Codes](#states-and-their-codes)
 - [Top 10 diagnosis involved in health fraud and their codes](#top-10-diagnosis-involved-in-health-fraud-and-their-codes)
 - [Top 10 procedures involved in health care frauds and their codes](#top-10-procedures-involved-in-health-care-frauds-and-their-codes)
-- [Races and their Codes](#race-and-their-codes)
+- [Races and their Codes](#races-and-their-codes)
   
 
 
 ## TABLE OF FIGURES
-
+[Figure 4.2.1: Distribution of claim records](#figure-4.2.1:-distribution-of-claim-records)
+[Figure 4.2.2: Potential fraud among providers](#figure-4.2.2:-potential-fraud-among-providers)
+[Figure 4.2.3: State-wise beneficiary distribution](#figure-4.2.3:-state-wise-beneficiary-distribution)
+[Figure 4.2.4: Race-wise Beneficiary Distribution](#figure-4.2.4-race-wise-beneficiary-distribution)
+[Figure 4.2.5: Top 10 procedures involved in healthcare fraud](#figure-4.2.5:-top-10-procedures-involved-in-healthcare-fraud)
+[Figure 4.2.6: Top10 Diagnosis involved in Healthcare Fraud](#figure-4.2.6:-top-10-diagnosis-involved-in-healthcare-fraud)
+[Figure 4.4.1: Receiver Operating Characteristic](#figure-4.4.1:-receiver-operating-characteristic)
+[Figure 4.4.2: True Positive Rate vs True negative Rate](#figure-4.4.2:-true-positive-rate-vs-true-negative-rate)
 
 
 
@@ -308,7 +315,7 @@ Figure 4.2.6 shows that claim diagnosis 4019 (Unspecified essential hypertension
 
 ![image](https://github.com/user-attachments/assets/e996601a-654d-4db1-9e65-7906ad0695b2)
 
-Figure 4.2.6: Top10 Diagnosis involved in Healthcare Fraud 1
+Figure 4.2.6: Top 10 Diagnosis involved in Healthcare Fraud
 
 
 
