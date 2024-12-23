@@ -1,6 +1,22 @@
 # MODELLING HEALTH INSURANCE CLAIMS FRAUD USING LOGISTIC REGRESSION: AN APPLICATION OF MACHINE LEARNING
 
 
+
+### PREPARED AND SUBMITTED BY:
+
+Kimonge Okindo Joel
+
+Tony Blair
+
+Nyagaka Lawreen Kerubo
+
+Kimani Joseph Mwangi
+
+Okoth Frank Oluoch
+
+
+
+
 ## Abstract
 
 The insurance industry is plagued by health insurance fraud in Kenya. Health insurance fraud involves deception and misrepresentation to get illicit health insurance benefits. This approach reduces affordable medical care for all socioeconomic groups. The analysis highlights the rising frequency of fraudulent claims and insurance and public healthcare program losses. It stresses how important it is to resolve these issues to preserve the healthcare system. This research seeks to detect fraudulent health insurance claims using logistic regression and stresses the importance of detecting and eradicating fraud to protect policyholders, minimize costs, and retain insurance sector trust. The research approach includes data collection, preparation, model fitting, and performance evaluation. The model's performance is measured by accuracy, precision, recall, fall-out, and AUR-ROC. The study fills gaps in fraud detection, data validation, and fraudulent intent research. It uses machine learning to detect health insurance fraud to improve healthcare efficiency and cut costs aiming to help the Kenyan and international insurance industry comprehend the rise in health insurance fraud.
